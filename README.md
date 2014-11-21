@@ -1,6 +1,6 @@
-# Numeric eXtensions
+# Arithmetic eXtensions
 
-## Added Class methods
+## `Math`
 
 - `.integer_length`
 - `.digit_count`
@@ -9,7 +9,7 @@
 - `.binomial_coefficient`
 - `.multinomial_coefficient`
 
-## Added Instance methods
+## `Numeric`
 
 - `plus?`
 - `minus?`
