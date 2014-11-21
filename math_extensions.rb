@@ -49,14 +49,14 @@ module Math
 
     return 1 if k.zero? || n == k
 
-    n_k = n - k
+    n_minus_k = n - k
 
-    return n if n_k == 1
+    return n if n_minus_k == 1
 
-    if k < n_k
-      (range_product(n_k+1, n)/(factorial k)).floor
+    if k < n_minus_k
+      (range_product(n_minus_k+1, n)/(factorial k)).floor
     else
-      (range_product(k+1, n)/(factorial n_k)).floor
+      (range_product(k+1, n)/(factorial n_minus_k)).floor
     end
   end
 
@@ -75,7 +75,7 @@ module Math
   end
 
   def self._collect_reduce meth, arr
-    0.upto(arr.size-1).map { |i| arr[0..i].reduce(&meth) }
+    0.upto(arr.size-1).collect { |i| arr[0..i].reduce(&meth) }
   end
   private_class_method :_collect_reduce
 end
