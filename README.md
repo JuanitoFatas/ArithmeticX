@@ -1,4 +1,6 @@
-# Arithmetic eXtensions
+# Arithmetic eXtensions for Ruby
+
+Ruby should have rich and exact Arithmetic. Let's improve it.
 
 ## `Math`
 
